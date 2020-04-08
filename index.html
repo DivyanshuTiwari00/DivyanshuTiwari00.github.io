@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+   background-image:url('index.jpg') ;
+   background-size:1500px 800px;
+   background-repeat:no-repeat;
+
+}
+#second{
+       margin-left:10px;
+}
+
+#button {
+    border-radius: 20px;
+    background-color: #6F97E6;
+    border: none;
+    color: #0A0A0A;
+    text-align: center;
+    font-size: 28px;
+    padding: 13px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#button:hover span {
+    padding-right: 25px;
+}
+
+#button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#blue2{
+     margin-left:1000px;
+}
+
+a {
+  color: Yellow;
+}
+
+
+
+
+
+#Button {
+    border-radius: 20px;
+    background-color: #6F97E6;
+    border: none;
+    color: #0A0A0A;
+    text-align: center;
+    font-size: 28px;
+    padding: 13px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#Button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#Button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#Button:hover span {
+    padding-right: 25px;
+}
+
+#Button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {padding: 1px 16px;
+      height:80;
+      background-color: #5cb85c;
+      margin-top:10px;}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -30px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -30px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+
+</style>
+<p align="center"><font color="#E6E32B" size="5"><marquee scrollamount="5" width="20">&lt;&lt;&lt;</marquee></font><font color="#9795F9" size="5">W<small>ELCOME </small>T<small>O</small>
+<font color="#E6E32B" size="5"><marquee scrollamount="5" direction="right" width="20">&gt;&gt;&gt;</marquee></font></p>
+
+</head>
+<center>
+<u><font color="orange" size="8"><h3>I<small>NDIAN </small></font>
+            <font color="white" size="8">E<small>LECTRICAL </small></font>
+            <font color="Green" size="8">D<small>ISTRIBUTION </small> </font></center></u>
+             <center><p id="second" ><font color="white" size="7"><u>L<small>IMITED</u> </small></h3> </p> </center>
+
+     <br> <br> <br> <br>
+    <footer>
+
+        <center><button id="button"><span>W<small>ELCOME</small></span></button> </center>
+        <p align="right"><font size="4" color="yellow">@By <a href="https://twitter.com/DIVYANSHU_T95">Divyanshu Tiwari</a></p>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <div class="modal-body">
+        <p align="center">Use Desktop for Best Version Of This Website  </p>
+      <center><button id="Button"><a href="main.html"><span>H<small>OME</small></span></a></button> </center>
+  </div>
+
+
+</div>
+
+
+    </footer>
+    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("button");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
