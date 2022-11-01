@@ -1,252 +1,60 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPT | Home</title>
+<body>
 <style>
-body{
-   background-image:url('index.jpg') ;
-   background-size:1500px 800px;
-   background-repeat:no-repeat;
-
-}
-#second{
-       margin-left:10px;
-}
-
-#button {
-    border-radius: 20px;
-    background-color: #6F97E6;
-    border: none;
-    color: #0A0A0A;
-    text-align: center;
-    font-size: 28px;
-    padding: 13px;
-    width: 170px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-#button span {
-    cursor: pointer;
+body{background-image:url("home bac.png");background-size:cover;background-attachment:fixed;}
+ #a1{opacity:0.4;
     display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
+    border:5px solid orange;filter: alpha(opacity=40);transition-duration:2s;padding:10px 10px;}
+ #a1:hover {filter: alpha(opacity=100);/*for IE8 or Earlier*/opacity:1;border-radius:50px;}
 
-#button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-#button:hover span {
-    padding-right: 25px;
-}
-
-#button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-#blue2{
-     margin-left:1000px;
-}
-
-a {
-  color: Yellow;
-}
-
-
-
-
-
-#Button {
-    border-radius: 20px;
-    background-color: #6F97E6;
-    border: none;
-    color: #0A0A0A;
-    text-align: center;
-    font-size: 28px;
-    padding: 13px;
-    width: 170px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-#Button span {
-    cursor: pointer;
+ #a3{opacity:0.4;
     display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
+    border:5px solid orange;filter: alpha(opacity=40);transition-duration:2s;padding:10px 10px;}
 
-#Button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
+ #a3:hover {filter: alpha(opacity=100);/*for IE8 or Earlier*/opacity:1;border-radius:50px;}
+ #a4{opacity:0.4;
+    display: inline-block;
+    border:5px solid orange;filter: alpha(opacity=40);transition-duration:2s;padding:10px 10px;}
 
-#Button:hover span {
-    padding-right: 25px;
-}
+ #a4:hover {filter: alpha(opacity=100);/*for IE8 or Earlier*/opacity:1;border-radius:50px;}
+ #a5{opacity:0.4;
+    display: inline-block;
+    border:5px solid orange;filter: alpha(opacity=40);transtion-duration:3s;padding:10px 10px;}
 
-#Button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
+ #a5:hover {filter: alpha(opacity=100);/*for IE8 or Earlier*/opacity:1;border-radius:50px;}
 
+ul {list-style-type: none;  margin: 0;padding: 0;overflow:hidden;}
+li {float:right;}
 
+li a {display:inline;color:Black;padding:10px 12px;
+text-align: center;
+text-decoration: underline;font-style: normal;font-family:PAPYRUS;font-size:25px;border-style:solid;border-width:4px;border-color:black;}
 
-
-
-
-
-
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s
-}
-
-/* Modal Content */
-.modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fefefe;
-  width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s
-}
-
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 8px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-body {padding: 1px 16px;
-      height:80;
-      background-color: #5cb85c;
-      margin-top:10px;}
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {bottom: -30px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-  from {bottom: -30px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-
-
+li a:hover {background-color:Black;color:Orange;transition-duration:1s;}
+.active {background-color:Black;color: Orange;}
+img:hover{border-radius:50px;transition-duration:3s;}
 </style>
-<p align="center"><font color="#E6E32B" size="5"><marquee scrollamount="5" width="20">&lt;&lt;&lt;</marquee></font><font color="#9795F9" size="5">W<small>ELCOME </small>T<small>O</small>
-<font color="#E6E32B" size="5"><marquee scrollamount="5" direction="right" width="20">&gt;&gt;&gt;</marquee></font></p>
-
-</head>
 <center>
-<u><font color="orange" size="8"><h3>I<small>NDIAN </small></font>
-            <font color="white" size="8">E<small>LECTRICAL </small></font>
-            <font color="Green" size="8">D<small>ISTRIBUTION </small> </font></center></u>
-             <center><p id="second" ><font color="white" size="7"><u>L<small>IMITED</u> </small></h3> </p> </center>
-
-     <br> <br> <br> <br>
-    <footer>
-
-        <center><button id="button"><span>W<small>ELCOME</small></span></button> </center>
-        <p align="right"><font size="4" color="yellow">@By <a href="#">Indian Distribution Limited</a></p>
-        <!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-
-    <div class="modal-body">
-        <p align="center">Use Desktop for Best Version Of This Website(Not Made for Mobile Version)  </p>
-      <center><button id="Button"><a href="main.html"><span>H<small>OME</small></span></a></button> </center>
-  </div>
-
-
-</div>
-
-
-    </footer>
-    <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("button");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+<img src="logo.png" width="130" height="140" align="top" ><br><br>
+<ul>
+<li><a href="Leisure.html">Leisure</a></li>
+<li><a href="pilgrimage1.html">Pilgrimage</a></li>
+<li><a href="wildlife1.html">Wildlife</a></li>
+<li><a href="heritage front.html">Heritage</a></li>
+<li><a class="active" href="index.html" >Home</a></li>
+</ul>
+</center><br><br><br><br>
+<center>
+<font face="papyrus" size=7>The Heart of Incredible<br><font face="papyrus" size=7 color="crimson red"> IN</font><font face="papyrus" size=7 color="White">D</font><font face="papyrus" size=7 color="Green">IA</font><hr align="center" width=100% color="black" size=4>MADHYA PRADESH</font><br>
+<a id="a1" href="heritage front.html"><img  src="her.jpg" height="300" width="400" align=left></a>                                                      
+<a id="a3" href="pilgrimage1.html"><img  src="pil.jpg" height="300" width="400" align=left></a><br><br>
+<a id="a4" href="leisure.html"><img  src="leis.jpg" height="300" width="400" align=left></a>
+<a id="a4" href="wildlife1.html"><img  src="wil.jpg" height="300" width="400" align=left></a><br><br>
+<font face="papyrus" size=6 color="white">Click Over An Image To Know More About It........</font></center><br>
+<center><font size="5" face="gabriola" color="purple">Please Make Sure That You Are Using latest version of your browser.......</font></center><br>
+<center><font size="4" face="gabriola" color="white">By Divyanshu Tiwari<br></font>
+<fontcolor="Blue"><a href="https://twitter.com/DIVYANSHU_T95">Contact Info</a></font></center>
 </body>
 </html>
